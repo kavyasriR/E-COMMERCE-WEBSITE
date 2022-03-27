@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+      body
+{
+  margin:0 auto;
+  padding:0;
+  
+  text-align:center;
+  background-color:rgb(253, 245, 248);
+}
+#wrapper
+{
+  width:995px;
+  padding:0px;
+  margin:0px auto;
+  font-family:helvetica;
+  position:relative;
+}
+#wrapper .baricon
+{
+  display:inline-block;
+  border-radius:100%;
+  padding:5px;
+  background-color:rgb(245, 79, 143);
+  color:white;
+}
+#wrapper .progress_bar
+{
+  width:130px;
+  height:5px;
+  border-radius:20px;
+  background-color:black;
+  display:inline-block;
+}
+#wrapper form div
+{
+  margin-left:340px;
+  padding:10px;
+  box-sizing:border-box;
+  width:300px;
+  margin-top:50px;
+  background-color:#f54857;
+}
+#wrapper form div p
+{
+  color:black;
+  margin:0px;
+  margin-top:10px;
+  font-weight:bold;
+}
+#wrapper form div .form_head
+{
+  font-size:22px;
+  font-weight:bold;
+  margin-bottom:30px;
+}
+#wrapper form div input[type="text"]
+{
+  width:200px;
+  height:40px;
+  padding:5px;
+  border-radius:5px;
+  border:none;
+  margin-top:10px;
+}
+#wrapper form div input[type="button"],input[type="submit"]
+{
+  width:80px;
+  height:40px;
+  border-radius:5px;
+  border:2px solid black;
+  background:none;
+  color:black;
+  margin:5px;
+  margin-top:10px;
+}
+#user_details,#pay
+{
+  display:none;
+}
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <br>
+        <span class='baricon'>1</span>
+        <span id="bar1" class='progress_bar'></span>
+        <span class='baricon'>2</span>
+        <span id="bar2" class='progress_bar'></span>
+        <span class='baricon'>3</span>
+      
+        <form method="post" action="">
+        <div id="account_details">
+          <p>Full Name</p>
+          <input type="text" placeholder='Full Name'>
+          <p>Email Address</p>
+          <input type="text" placeholder='Email Address'>
+          <p>Address</p>
+          <input type="text" placeholder='Address'>
+          <p>City</p>
+          <input type="text" placeholder='City'>
+          <p>State</p>
+          <input type="text" placeholder='State'>
+          <br>
+          <p>Zipcode</p>
+          <input type="text" placeholder='Zipcode'>
+          <input type="button" value="Next" onclick="show_next('account_details','user_details','bar1');">
+        </div>
+      
+        <div id="user_details">
+          <p class='form_head'>Account Details</p>
+          <p> Name</p>
+          <input type="text" placeholder=' Name as per in card'>
+          <p>Card type</p>
+          <input type="text" placeholder=' card type'>
+          <p>Bank name</p>
+          <input type="text" placeholder='bank name'>
+          <p>Enter card number</p>
+          <input type="text" placeholder='card number'>
+          <p>Enter exp year</p>
+          <input type="text" placeholder='exp year'>
+          <p>Enter exp month</p>
+          <input type="text" placeholder='exp month'>
+          <p>Enter cvv number</p>
+          <input type="text" placeholder='cvv number'>
+          <br>
+          <input type="button" value="Previous" onclick="show_prev('account_details','bar1');">
+          <input type="button" value="Next" onclick="show_next('user_details','pay','bar2');">
+        </div>
+          <div id="pay">
+          <p class='form_head'>Enter the 4 digit otp send to the registered number</p>
+        
+          <input type="text" placeholder='otp'>
+         
+          <br>
+          <input type="button" value="Previous" onclick="show_prev('user_details','bar2');">
+          <input type="Submit" class="submit" value="Submit">
+        </div>
+        </form>
+        
+      </div>
+      <script>
+        function show_next(id,nextid,bar)
+{
+  var ele=document.getElementById(id).getElementsByTagName("input");
+  var error=0;
+  for(var i=0;i<ele.length;i++)
+  {
+    if(ele[i].type=="text" && ele[i].value=="")
+  {
+    error++;
+  }
+  }
+	
+  if(error==0)
+  {
+    document.getElementById("account_details").style.display="none";
+    document.getElementById("user_details").style.display="none";
+    document.getElementById("pay").style.display="none";
+    $("#"+nextid).fadeIn();
+    document.getElementById(bar).style.backgroundColor="#04009A";
+  }
+  else
+  {
+    alert("Fill All The details");
+  }
+}
+
+function show_prev(previd,bar)
+{
+  document.getElementById("account_details").style.display="none";
+  document.getElementById("user_details").style.display="none";
+  document.getElementById("pay").style.display="none";
+  $("#"+previd).fadeIn();
+  document.getElementById(bar).style.backgroundColor="#D8D8D8";
+}
+$(document).ready(function(){
+  $(".submit").click(function(){
+    alert("Amount paid successfully...Thankyou!! Have a great journey")
+  });
+});
+      </script>
+    </body>
+</html>

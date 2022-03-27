@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="WEB.css">
+    <title>collections</title>
+    <link rel="stylesheet" href="men.css">
+</head>
+<body>
+    <marquee behavior="right" direction="alternate" style="background-color: peachpuff;">
+        <h1><pre>NOW SHIPPING WORLDWIDE!!        NOW SHIPPING WORLDWIDE!!       NOW SHIPPING WORLDWIDE!!        NOW SHIPPING WORLDWIDE!!        NOW SHIPPING WORLDWIDE!!        NOW SHIPPING WORLDWIDE!!</pre> </h1>
+    </marquee>
+    <div class="heading">
+        <br>
+        <h2>MEN'S COLLECTION-ALL IN ONE PLACE</h2>
+    </div>
+    <div class="row1">
+        <form name="form1">
+        <br><br>
+        <div class="mcol1">
+            <img id="m1" src="m1.jpg" >
+            <br><br>
+            <h4>FORMAL SUIT:RS-1550</h4>
+            <a href="m1.html"></a>
+            <input type="checkbox" onclick="form1.answer.value+='1550+'">
+        </div>
+        <div class="mcol2">
+            <img id="m2" src="m2.jpeg" >
+            <br><br>
+            <h4>NAVY TUXEDO:RS-2000</h4>
+            <a href="m2.html"></a>
+            <input type="checkbox" onclick="form1.answer.value+='2000+'">
+        </div>
+        <div class="mcol4">
+            <img id="m4" src="m4.jpg">
+            <br><br>
+            <h4>COTTON FULL SLEEVES SHIRT:RS-999</h4>
+            <a href="m4.html"></a>
+            <input type="checkbox" onclick="form1.answer.value+='999+'">
+        </div>
+        <div class="mcol3">
+            <img id="m3" src="m3.jpg">
+            <br><br>
+            <h4>CASUAL SHIRT:RS-699</h4>
+            <a href="m3.html"></a>
+            <input type="checkbox" onclick="form1.answer.value+='699+'">
+        </div>
+        <div class="mcol5">
+            <img id="m5" src="m5.jpg">
+            <br><br>
+            <h4>FANCY BORDER DHOTHI :RS-1500</h4>
+            <a href="m5.html"></a>
+            <input type="checkbox" onclick="form1.answer.value+='1500+'">
+        </div>
+        <div class="mcol6">
+            <img id="m6" src="m6.jpg">
+            <br><br>
+            <h4>COTTON DHOTHI KURTA SET :RS-3000</h4>
+            <a href="m6.html"></a>
+            <input type="checkbox" onclick="form1.answer.value+='3000+'">
+        </div>
+        <div class="mcol7">
+            <img id="m7" src="m7.jpeg">
+            <br><br>
+            <h4>MEN SLIM FIT TEE:RS-700</h4>
+            <a href="m7.html"></a>
+            <input type="checkbox" onclick="form1.answer.value+='700+'">
+        </div>
+        <div class="mcol8">
+            <img id="m8" src="m8.jpg">
+            <br><br>
+            <h4>SHORT SLEEVE TEE:RS-500</h4>
+            <a href="m8.html"></a>
+            <input type="checkbox" onclick="form1.answer.value+='500+'">
+        </div>
+        <br><br>
+        <input type="button" value="generate bill" onclick="form1.answer.value=eval(form1.answer.value+='0')">
+        <br><br>
+        <input id = "calc" type ="text" name = "answer"> 
+        <a href="payment.html"><input id="payment" type="button" value="Proceed for payment"></a>
+    </form>    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>    
+        
+    </div>
+</body>
+</html>

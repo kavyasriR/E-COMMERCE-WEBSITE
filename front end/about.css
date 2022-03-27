@@ -1,0 +1,55 @@
+*{
+    margin: 2;
+    padding: 3;
+    box-sizing: border-box;
+}
+.header{
+    background-image: url(aboutbg.jpg);
+    background-repeat: none;
+    background-size: cover;
+    height: 5in;
+}
+
+.left1{
+    margin-left: 60px;
+}
+.right1 h5{
+    font-size: 23px;
+}
+.right1{
+    margin-left: 700px;
+    margin-top: -370px;
+    font-size: 18px;
+    font-family: 'Noto Serif JP', serif;
+}
+.left2{
+    margin-left: 640px;
+}
+.right2{
+    margin-left: 60px;
+    margin-top: -300px;
+    font-size: 18px;
+    width: 550px;
+    font-family: 'Noto Serif JP', serif;
+}
+.right2 h5{
+    font-size: 23px;
+}
+.left3{
+    margin-left: 60px;
+    height: 50px;
+}
+.right3 h5{
+    font-size: 23px;
+}
+.right3{
+    margin-left: 700px;
+    margin-top: -30px;
+    font-size: 18px;
+    font-family: 'Noto Serif JP', serif;
+}
+button{
+    font-size: 24px;
+    background-color: grey;
+    color: white;
+}

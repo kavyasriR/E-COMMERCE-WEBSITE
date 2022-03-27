@@ -1,0 +1,180 @@
+.heading{
+    background-color: rgb(248, 160, 129);
+    color: rgb(11, 11, 12);
+    text-align: center;
+    height: 60px;
+}
+
+.row1{
+    background-color: rgb(248, 241, 238);
+    height: 900px;
+}
+.mcol1{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    margin-left: 70px;
+}
+
+.mcol1 img{
+    height: 300px;
+    width: 230px;
+    box-shadow: 1px 2px 4px;
+
+}
+
+.mcol1 img:hover{
+    box-shadow: 1px 4px 10px;
+}
+
+.mcol2{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-top: -330px;
+    margin-left: 450px;
+}
+
+.mcol2 img{
+    height: 300px;
+    width: 230px;
+    box-shadow: 1px 2px 4px;
+
+}
+
+.mcol2 img:hover{
+    box-shadow: 1px 4px 10px;
+}
+
+
+
+.mcol4{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-top: -300px;
+    margin-left: 830px;
+}
+
+.mcol4 img{
+    height: 300px;
+    width: 230px;
+    box-shadow: 1px 2px 4px;
+
+}
+
+.mcol4 img:hover{
+    box-shadow: 1px 4px 10px;
+}
+
+.mcol3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-top: -305px;
+    margin-left: 1200px;
+}
+
+.mcol3 img{
+    height: 300px;
+    width: 230px;
+    box-shadow: 1px 2px 4px;
+
+}
+
+.mcol3 img:hover{
+    box-shadow: 1px 4px 10px;
+}
+
+.mcol5{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+.mcol5 img{
+    height: 300px;
+    width: 230px;
+    box-shadow: 1px 2px 4px;
+
+}
+
+.mcol5 img:hover{
+    box-shadow: 1px 4px 10px;
+}
+
+.mcol6{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-top: -303px;
+    margin-left: 450px;
+}
+
+.mcol6 img{
+    height: 300px;
+    width: 230px;
+    box-shadow: 1px 2px 4px;
+
+}
+
+.mcol6 img:hover{
+    box-shadow: 1px 4px 10px;
+}
+
+.mcol7{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-top: -303px;
+    margin-left: 830px;
+}
+
+.mcol7 img{
+    height: 300px;
+    width: 230px;
+    box-shadow: 1px 2px 4px;
+
+}
+
+.mcol7 img:hover{
+    box-shadow: 1px 4px 10px;
+}
+
+.mcol8{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-top: -303px;
+    margin-left: 1200px;
+}
+
+.mcol8 img{
+    height: 300px;
+    width: 230px;
+    box-shadow: 1px 2px 4px;
+
+}
+
+.mcol8 img:hover{
+    box-shadow: 1px 4px 10px;
+}
+
+input[type="checkbox"]{
+    margin-left: 100px;
+    height: 40px;
+}
+input[type="text"]{
+    margin-left: 680px;
+    height: 30px;
+    width: 200px;
+}
+input[type="button"]{
+    margin-left: 700px;
+    height: 30px;
+    width: 160px;
+    box-shadow: inset;
+    background-color:rgb(248, 160, 129);
+    border-color: rgb(245, 175, 71);
+    color:black;
+}
+#payment{
+    height: 50px;
+    width: 250px;
+    margin-left: 1200px;
+}
